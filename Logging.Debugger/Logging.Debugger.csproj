@@ -9,6 +9,7 @@
     <PackageId>Logging.Debugger</PackageId>
     <Product>Logging.Debugger</Product>
     <Version>1.1.0</Version>
+    <PackageProjectUrl>https://github.com/xljiulang/Logging.Debugger</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

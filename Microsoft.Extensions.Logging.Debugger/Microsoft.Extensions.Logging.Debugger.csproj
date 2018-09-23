@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>laojiu</Authors>
+    <Description>.net 4.5+的System.Diagnostics.Debugger日志输出组件，可以使用DebugViewer工具监听日志内容</Description>
+    <PackageReleaseNotes>.net framework的System.Diagnostics.Debugger日志输出组件，可以使用DebugViewer工具监听日志内容</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions " Version="1.0.0" />
+  </ItemGroup>
+  
+</Project>

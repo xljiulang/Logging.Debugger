@@ -6,6 +6,8 @@
     <Authors>laojiu</Authors>
     <Description>统一日志的的System.Diagnostics.Debugger日志提供者，可以使用DebugViewer工具监听日志内容</Description>
     <PackageReleaseNotes>统一日志的的System.Diagnostics.Debugger日志提供者，可以使用DebugViewer工具监听日志内容</PackageReleaseNotes>
+    <PackageId>Logging.Debugger</PackageId>
+    <Product>Logging.Debugger</Product>
   </PropertyGroup>
 
   <ItemGroup>

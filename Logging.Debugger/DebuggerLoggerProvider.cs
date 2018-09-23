@@ -1,6 +1,7 @@
+using Microsoft.Extensions.Logging;
 using System;
 
-namespace Microsoft.Extensions.Logging.Debugger
+namespace Logging.Debugger
 {
     /// <summary>
     /// 表示Debugger的日志提供者

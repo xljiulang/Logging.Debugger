@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Microsoft.Extensions.Logging.Debugger\Microsoft.Extensions.Logging.Debugger.csproj" />
+    <ProjectReference Include="..\Logging.Debugger\Logging.Debugger.csproj" />
   </ItemGroup>
 
 </Project>

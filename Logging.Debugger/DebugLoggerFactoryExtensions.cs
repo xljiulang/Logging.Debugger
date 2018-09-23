@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Logging.Debugger;
+using Logging.Debugger;
 using System;
 
 namespace Microsoft.Extensions.Logging

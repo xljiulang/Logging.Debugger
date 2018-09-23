@@ -1,7 +1,8 @@
+using Microsoft.Extensions.Logging;
 using System;
 using System.Text;
 
-namespace Microsoft.Extensions.Logging.Debugger
+namespace Logging.Debugger
 {
     /// <summary>
     /// 表示包装System.Diagnostics.Debugger.Log的日志

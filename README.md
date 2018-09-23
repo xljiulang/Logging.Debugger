@@ -1,5 +1,5 @@
 # Logging.Debugger
-统一日志的的System.Diagnostics.Debugger日志提供者，可以使用[DebugViewer](https://github.com/xljiulang/Microsoft.Extensions.Logging.Debugger/blob/master/DebugViewer.exe?raw=true)工具监听日志内容。
+Microsoft.Extensions.Logging统一日志的System.Diagnostics.Debugger日志提供者，可以使用[DebugViewer](https://github.com/xljiulang/Microsoft.Extensions.Logging.Debugger/blob/master/DebugViewer.exe?raw=true)工具监听日志内容。
 
 ### 1 Nuget
 PM> `install-package Logging.Debugger`

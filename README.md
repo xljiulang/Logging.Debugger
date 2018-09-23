@@ -1,5 +1,5 @@
 # Microsoft.Extensions.Logging.Debugger
-.net 4.5+的System.Diagnostics.Debugger日志输出组件，可以使用[DebugViewer](https://github.com/xljiulang/DebugViewer)工具监听日志内容
+.net 4.5+的System.Diagnostics.Debugger日志输出组件，可以使用[DebugViewer](https://github.com/xljiulang/Microsoft.Extensions.Logging.Debugger/blob/master/DebugViewer.exe?raw=true)工具监听日志内容。DebugViewer项目地址：https://github.com/xljiulang/DebugViewer
 
 ### 1 Nuget
 PM> `install-package Microsoft.Extensions.Logging.Debugger'

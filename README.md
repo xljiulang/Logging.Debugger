@@ -3,7 +3,7 @@ Microsoft.Extensions.Logging统一日志的System.Diagnostics.Debugger日志提�
 
 ### 1 Nuget
 PM> `install-package Logging.Debugger`
-<br/>支持.net framework 4.5
+<br/>支持.net framework 4.5、netstandard2.0
 
 ### 2 如何使用
 PM> `install-package Microsoft.Extensions.Logging`<br/>

@@ -19,11 +19,16 @@ namespace Logging.Debugger
         /// </summary>
         private readonly Func<string, LogLevel, bool> filter;
 
+        /// <summary>
+        /// 获取平台是否支持
+        /// </summary>
+        public static readonly bool IsPlatformSupported = Environment.OSVersion.Platform == PlatformID.Win32NT;
 
         /// <summary>
         /// 包装System.Diagnostics.Debugger.Log的日志
         /// </summary>
         /// <param name="name">名称</param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         public DebuggerLogger(string name)
             : this(name, null)
         {
@@ -34,8 +39,14 @@ namespace Logging.Debugger
         /// </summary>
         /// <param name="name">名称</param>
         /// <param name="filter">内容过滤器</param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         public DebuggerLogger(string name, Func<string, LogLevel, bool> filter)
         {
+            if (IsPlatformSupported == false)
+            {
+                throw new PlatformNotSupportedException();
+            }
+
             this.name = string.IsNullOrEmpty(name) ? nameof(DebuggerLogger) : name;
             this.filter = filter;
         }
@@ -97,7 +108,7 @@ namespace Logging.Debugger
                 builder.AppendLine().AppendLine().Append(exception.ToString());
             }
 
-            System.Diagnostics.Debugger.Log((int)logLevel, null, builder.ToString());
+            System.Diagnostics.Debugger.Log(0, null, builder.ToString());
         }
 
         private class NoopDisposable : IDisposable

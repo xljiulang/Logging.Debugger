@@ -12,6 +12,7 @@ namespace Microsoft.Extensions.Logging
         /// 添加Debugger日志提供者到LoggerFactory
         /// </summary>
         /// <param name="factory"></param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         /// <returns></returns>
         public static ILoggerFactory AddDebugger(this ILoggerFactory factory)
         {
@@ -24,6 +25,7 @@ namespace Microsoft.Extensions.Logging
         /// </summary>
         /// <param name="factory"></param>
         /// <param name="minLevel">日志最小级别</param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         /// <returns></returns>
         public static ILoggerFactory AddDebugger(this ILoggerFactory factory, LogLevel minLevel)
         {
@@ -35,6 +37,7 @@ namespace Microsoft.Extensions.Logging
         /// </summary>
         /// <param name="factory"></param>
         /// <param name="filter"></param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         /// <returns></returns>
         public static ILoggerFactory AddDebugger(this ILoggerFactory factory, Func<string, LogLevel, bool> filter)
         {

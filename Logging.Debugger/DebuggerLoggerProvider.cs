@@ -16,6 +16,7 @@ namespace Logging.Debugger
         /// <summary>
         /// Debugger的日志提供者
         /// </summary>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         public DebuggerLoggerProvider()
             : this(null)
         {
@@ -25,8 +26,14 @@ namespace Logging.Debugger
         /// Debugger的日志提供者
         /// </summary>
         /// <param name="filter">日志过滤器</param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         public DebuggerLoggerProvider(Func<string, LogLevel, bool> filter)
         {
+            if (DebuggerLogger.IsPlatformSupported == false)
+            {
+                throw new PlatformNotSupportedException();
+            }
+
             this.filter = filter;
         }
 
@@ -34,6 +41,7 @@ namespace Logging.Debugger
         /// 创建Logger
         /// </summary>
         /// <param name="name">名称</param>
+        /// <exception cref="PlatformNotSupportedException"></exception>
         /// <returns></returns>
         public ILogger CreateLogger(string name)
         {

@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>laojiu</Authors>
     <Description>Microsoft.Extensions.Logging统一日志的System.Diagnostics.Debugger日志提供者，可以使用DebugViewer工具监听日志内容</Description>
     <PackageReleaseNotes>Microsoft.Extensions.Logging统一日志的System.Diagnostics.Debugger日志提供者，可以使用DebugViewer工具监听日志内容</PackageReleaseNotes>
     <PackageId>Logging.Debugger</PackageId>
     <Product>Logging.Debugger</Product>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
